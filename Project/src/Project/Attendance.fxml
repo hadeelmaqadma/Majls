@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Attendance">
+   <children>
+      <Label layoutX="84.0" layoutY="103.0" prefHeight="31.0" prefWidth="61.0" text="Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lec_date" layoutX="165.0" layoutY="104.0" />
+      <TextField fx:id="num" layoutX="165.0" layoutY="161.0" />
+      <Label layoutX="42.0" layoutY="159.0" prefHeight="31.0" prefWidth="103.0" text="Phone Number" />
+      <Button layoutX="278.0" layoutY="234.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Label fx:id="majls" layoutX="123.0" layoutY="35.0" prefHeight="41.0" prefWidth="296.0" text="Take The Attendance of  Majls #">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="msg" layoutX="42.0" layoutY="214.0" prefHeight="101.0" prefWidth="225.0" />
+   </children>
+</AnchorPane>

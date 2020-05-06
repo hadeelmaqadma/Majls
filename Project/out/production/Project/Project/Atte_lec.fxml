@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.Atte_lec">
+   <children>
+      <BorderPane fx:id="br" layoutX="-2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="609.0">
+         <top>
+            <AnchorPane prefHeight="77.0" prefWidth="600.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="lec" layoutX="133.0" layoutY="15.0" mnemonicParsing="false" onAction="#lec" prefHeight="45.0" prefWidth="153.0" style="-fx-background-color: blue;" text="New Lecture" textFill="#f8f8f8" underline="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+                  <Button layoutX="328.0" layoutY="15.0" mnemonicParsing="false" onAction="#att" prefHeight="48.0" prefWidth="163.0" style="-fx-background-color: blue;" text="Attendance" textFill="#f8f8f8" underline="true">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

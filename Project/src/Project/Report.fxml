@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="420.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Project.ReportCtrl">
+   <children>
+      <Label layoutX="33.0" layoutY="27.0" prefHeight="27.0" prefWidth="104.0" text="Phone Number" />
+      <Button layoutX="375.0" layoutY="28.0" mnemonicParsing="false" onAction="#btn" style="-fx-background-color: blue;" text="Button" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="51.0" layoutY="76.0" onMouseClicked="#clicked" prefHeight="245.0" prefWidth="349.0">
+         <effect>
+            <Blend />
+         </effect>
+         <columns>
+            <TableColumn fx:id="lec_date" prefWidth="115.32171249389648" text="lec_date" />
+            <TableColumn fx:id="topic" prefWidth="113.68696594238281" text="topic" />
+            <TableColumn fx:id="alter_Mos" prefWidth="125.3304443359375" text="alter_Mos" />
+         </columns></TableView>
+      <TextField fx:id="selectedRow" layoutX="51.0" layoutY="334.0" prefHeight="30.0" prefWidth="281.0" promptText="SelectRow">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TextField>
+      <Button layoutX="375.0" layoutY="336.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: blue;" text="Delete" textFill="#f4eded" />
+      <TextField fx:id="num" layoutX="131.0" layoutY="28.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </TextField>
+      <TextField fx:id="date" layoutX="119.0" layoutY="373.0" promptText="yyyy-mm-dd" />
+      <Label layoutX="51.0" layoutY="376.0" prefHeight="20.0" prefWidth="34.0" text="Date" />
+      <Button layoutX="374.0" layoutY="373.0" mnemonicParsing="false" onAction="#update" style="-fx-background-color: blue;" text="update" textFill="#f7f6f6" />
+      <Label fx:id="msg" layoutX="97.0" layoutY="399.0" prefHeight="28.0" prefWidth="342.0" />
+
+   </children>
+</AnchorPane>
